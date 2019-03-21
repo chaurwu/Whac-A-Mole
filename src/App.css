@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+.score {
+  text-align: center;
+  margin: auto 30px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  margin: 7px 10px;
+}
+
+.button {
+  height: 40px;
+  margin: auto 20px;
+  background-color: darkslategrey;
+  color: white;
+  font-size: 16px;
+  padding: 4px 16px;
+}
+
+.dashboard {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.dashboard h2 {
+  flex-grow: 6;
+  text-align: center;
+}
+
+.molesArea {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 100px;
+  width: 70%;
+  margin: auto;
+}
+
+.mole {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  /* https://commons.wikimedia.org/wiki/File:Emojione1_1F43F.svg */
+  background-image: url(./assets/squirrel.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  
+}
+
+.mound {
+  width: 100%;
+  height: 150px;
+  /* https://svgsilh.com/009688/image/44626.html */
+  background-image: url(./assets/mound.svg);
+  background-size: 100%;
+  background-position-y: 100px;
+  background-repeat: no-repeat;
+}
