@@ -1,17 +1,15 @@
 import React from 'react'
-import TimeDigit from './TimeDigit';
-import { observer } from 'mobx-react-lite';
+import Digit from './Digit';
 
-const Timer = observer(({game}) => {
-    const timeLeft = game.timeLeft;
-    const ones = timeLeft % 10;
-    const tens = (timeLeft - ones) / 10;
+const Timer = ({time}) => {
+    const ones = time % 10;
+    const tens = (time - ones) / 10;
     return (
       <div className="timer">
-        <TimeDigit digit={tens}/>
-        <TimeDigit digit={ones}/>
+        <Digit digit={tens}/>
+        <Digit digit={ones}/>
       </div>
     )
-})
+}
 
 export default Timer

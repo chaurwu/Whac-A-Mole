@@ -1,17 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import Game from './components/Game';
+import MolesArea from './components/MolesArea';
+import Dashboard from './components/Dashboard';
 
-
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Game game={this.props.game} />
-      </div>
-    );
-  }
+const App = ({game}) => {
+  return (
+    <div className="App">
+      <Dashboard game={game} />
+      <MolesArea moles={game.moles} />    
+    </div>
+  )
 }
 
 export default App;

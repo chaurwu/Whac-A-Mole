@@ -12,13 +12,11 @@ const Dashboard = observer(({game}) => {
       }
   }
 
-  console.log('Dashboard render called.');
-
   return (
     <div className='dashboard'>
         <h2>Whac-A-Mole</h2>
         <button className='button' onClick={gameButtonHandler}>{ game.playing? 'End The Game' : 'Play New Game'} </button>
-        <Timer game={game} />
+        <Timer time={game.timeLeft} />
         <Score score={game.score} />
     </div>
   )

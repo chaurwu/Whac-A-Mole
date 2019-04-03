@@ -2,6 +2,28 @@
   text-align: center;
 }
 
+.digitUpperHalf {
+  width: 30px;
+  height: 50%;
+  margin: 0px 3px 0px 3px;
+  box-sizing: border-box;
+  border-top: 10px solid;
+  border-right: 10px solid;
+  border-bottom: 5px solid;
+  border-left: 10px solid;
+}
+
+.digitLowerHalf {
+  width: 30px;
+  height: 50%;
+  margin: 0px 3px 0px 3px;
+  box-sizing: border-box;
+  border-top: 5px solid;
+  border-right: 10px solid;
+  border-bottom: 10px solid;
+  border-left: 10px solid;
+}
+
 .score {
   text-align: center;
   margin: auto 30px;
